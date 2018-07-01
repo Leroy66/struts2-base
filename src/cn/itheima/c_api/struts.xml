@@ -4,8 +4,8 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 	
 <struts>
-	<package name="dynamic" namespace="/dynamic" extends="struts-default">
-		<action name="DynamicAction_*" class="cn.itheima.b_dynamic.DynamicAction" method="{1}">
+	<package name="apiDemo" namespace="/apiDemo" extends="struts-default">
+		<action name="apiDemo" class="cn.itheima.c_api.ApiDemoAction" method="{1}">
 			<result name="success">/hello.jsp</result>
 		</action>
 	</package>

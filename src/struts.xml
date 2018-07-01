@@ -20,16 +20,19 @@
 		    abstract属性：包是否为抽象的，标示性属性，不能独立运行，专们被继承
 	 -->
 	<package name="hello" namespace="/hello" extends="struts-default">
+		 <!-- 当访问不到时，默认的action -->
+		<default-action-ref name="HelloAction"></default-action-ref>
 		<!-- 
 			action元素：配置Action类 
 			     name属性：决定action访问的路径
 			     class属性：action的完成类名
-			     method属性：action中的具体方法
+			     method属性：action中的具体方法,默认是execute
 		 -->
+		
 		<action name="HelloAction" class="cn.itheima.a_hello.HelloAction"
 			method="hello">
 			<!-- result元素:结果配置
-					name属性:表示结果的处理的名称,与action方法的返回值对应
+					name属性:表示结果的处理的名称,与action方法的返回值对应，默认是success
 					type属性:指定调用哪一个result类来处理结果,默认使用转发
 					标签体:填写页面的相对路径
 			 -->

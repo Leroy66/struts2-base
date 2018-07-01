@@ -1,6 +1,7 @@
 package cn.itheima.b_dynamic;
 
-public class DynamicDemo1 {
+//动态方法配置
+public class DynamicAction {
 
 	public String add() {
 		System.out.println("添加方法!");
