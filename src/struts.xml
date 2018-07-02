@@ -43,4 +43,5 @@
 	<include file="cn/itheima/b_dynamic/struts.xml"></include>
 	<include file="cn/itheima/c_api/struts.xml"></include>
 	<include file="cn/itheima/d_api/struts.xml"></include>
+	<include file="cn/itheima/e_param/struts.xml"></include>
 </struts>
