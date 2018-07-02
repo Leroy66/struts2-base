@@ -4,9 +4,9 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 	
 <struts>
-	<package name="apiDemo1" namespace="/apiDemo1" extends="struts-default">
-		<action name="apiDemo1" class="cn.itheima.c_api.ApiDemo1Action" method="execute">
-			<result name="success">/hello.jsp</result>
+	<package name="apiDemo2" namespace="/apiDemo2" extends="struts-default">
+		<action name="apiDemo2" class="cn.itheima.d_api.ApiDemo2Action" method="execute">
+			<result name="success">/api.jsp</result>
 		</action>
 	</package>
 </struts>

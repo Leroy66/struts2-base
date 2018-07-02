@@ -1,6 +1,5 @@
 package cn.itheima.c_api;
 
-import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 
 //action类的配置
@@ -16,8 +15,12 @@ import com.opensymphony.xwork2.ActionSupport;
 
 //继承ActionSupport类
 //更优于上一个方法，  implements Action, Validateable, ValidationAware, TextProvider, LocaleProvider, Serializable
-public class ApiDemoAction extends ActionSupport{
-
+public class ApiDemo1Action extends ActionSupport{
+		
+	public String execute(){
+		System.out.println("ApiDemo1Action execute方法执行了");
+		return "success";
+	}
 }
 
 
