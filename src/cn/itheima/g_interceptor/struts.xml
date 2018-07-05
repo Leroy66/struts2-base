@@ -5,6 +5,21 @@
 	
 <struts>
 	<package name="interceptor" namespace="/" extends="struts-default">
+		<interceptors>
+		<!-- 注册拦截器 -->
+			<interceptor name="myInter3" class="cn.itheima.g_interceptor.MyInterceptor3"></interceptor>
+		<!-- 注册拦截器栈 -->
+			<interceptor-stack name="myStack">
+				<!-- 自定义拦截器引用 -->
+				<interceptor-ref name="myInter3"></interceptor-ref>
+				<!-- 运营默认的拦截器(20个) -->
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!-- 指定默认拦截器栈 -->
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		
+		
 		<action name="demo5Action" class="cn.itheima.g_interceptor.Demo5Action" method="execute">
 			<result name="success">/interceptor.jsp</result>
 		</action>

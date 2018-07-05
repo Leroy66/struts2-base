@@ -10,7 +10,12 @@ public class MyInterceptor3 extends MethodFilterInterceptor {
 	@Override
 	protected String doIntercept(ActionInvocation invocation) throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		
+		System.out.println("MyInterceptor3拦截器处理放行之前");
+		//放行
+		invocation.invoke();
+		System.out.println("MyInterceptor3拦截器处理方行之后");
+		return "success";
 	}
 
 
